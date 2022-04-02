@@ -1,0 +1,61 @@
+.alert {
+  display: flex;
+  position: fixed;
+  top: -100%;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 71px;
+  padding-right: 40px;
+  padding-left: 40px;
+  transition: top .5s;
+  background: #e74c3c;
+  color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+  z-index: 1004;
+}
+
+.alert--visible {
+  top: 0;
+}
+
+.alert__message {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.alert__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background: url('http://raw.githubusercontent.com/calazans10/bookmarks-client/master/src/images/alerticon.svg') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.alert__trigger {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  border: none;
+  background: url('http://raw.githubusercontent.com/calazans10/bookmarks-client/master/src/images/closeicon.svg') center center no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1044px) {
+  .alert {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .alert__trigger {
+    position: absolute;
+    right: rem(40);
+  }
+}

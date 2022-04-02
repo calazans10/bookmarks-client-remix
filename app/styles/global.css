@@ -1,0 +1,71 @@
+:root {
+  --base-font-size: 16;
+  --base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --base-bg-color: #fff;
+  --base-color: #333;
+  --link-color: #2980b9;
+  --link-hover-color: #20638f;
+}
+  
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--base-bg-color);
+  color: var(--base-color);
+  font-family: var(--base-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  transition: color 0.1s linear;
+  color: var(--link-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.sr-only:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}

@@ -1,0 +1,9 @@
+.page-navigation {
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+  .page-navigation {
+    margin-top: 60px;
+  }
+}

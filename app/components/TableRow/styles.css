@@ -1,0 +1,21 @@
+.table-row {
+  display: block;
+  padding: 30px 12px;
+  border-top: 2px solid #efefef;
+}
+
+.table-row:last-child {
+  border-bottom: 2px solid #efefef;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+@media only screen and (min-width: 600px) {
+  .table-row {
+    display: table-row;
+    padding: 0;
+    border-bottom: 2px solid #efefef;
+  }
+}

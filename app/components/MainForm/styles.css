@@ -1,0 +1,29 @@
+.main-form__legend {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-form a  {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-form {
+    width: 522px;
+    margin: 60px auto;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main-form {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1044px) {
+  .main-form {
+    width: 600px;
+  }
+}

@@ -1,0 +1,37 @@
+.main-navigation {
+  margin-left: auto;
+}
+
+.main-navigation__item {
+  display: inline-block;
+  line-height: 26px;
+}
+
+.main-navigation__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 1044px) {
+  .main-navigation__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.main-navigation__button {
+  padding: 0;
+  transition: color 0.1s linear;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  color: #7d7c7a;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.main-navigation__button:focus,
+.main-navigation__button:hover {
+  color: #7d7c7a;
+}

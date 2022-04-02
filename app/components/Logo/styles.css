@@ -1,0 +1,8 @@
+.logo {
+  flex: 1;
+}
+
+.logo a {
+  font-size: 22px;
+  font-weight: 400;
+}

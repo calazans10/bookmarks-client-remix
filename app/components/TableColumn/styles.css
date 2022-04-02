@@ -1,0 +1,35 @@
+.table-column {
+  display: block;
+}
+
+.table-column::before {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  content: attr(data-label);
+}
+
+.table-column:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .table-column {
+    display: table-cell;
+    padding: 12px;
+  }
+
+  .table-column::before {
+    display: none;
+  }
+
+  .table-column:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .table-column--actions {
+    width: 40%;
+    text-align: right;
+  }
+}

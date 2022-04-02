@@ -1,0 +1,13 @@
+.table {
+  width: 100%;
+  border-right: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .table {
+    margin: 0 auto 40px;
+  }
+}

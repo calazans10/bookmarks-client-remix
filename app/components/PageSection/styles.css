@@ -1,0 +1,28 @@
+.page-section {
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .page-section {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .page-section {
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.page-section__title {
+  margin-bottom: 50px;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.page-section__title  p {
+  line-height: 1.5;
+}

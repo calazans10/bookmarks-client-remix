@@ -1,0 +1,17 @@
+.button-action {
+  width: 100px;
+  padding: 8px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-action:focus,
+.button-action:hover {
+  color: #fff;
+}
